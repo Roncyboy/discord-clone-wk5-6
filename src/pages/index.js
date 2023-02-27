@@ -64,7 +64,7 @@ export default function Home() {
             <button type="submit">Create</button>
           </form>
         </div>
-
+        <div className={styles.grid}>
         {channels.map((channel) => {
           return (
             <div key={channel.id}>
@@ -77,6 +77,7 @@ export default function Home() {
             </div>
           )
         })}
+        </div>
       </main>
     </>
   )

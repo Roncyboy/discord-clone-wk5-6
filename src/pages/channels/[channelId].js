@@ -37,7 +37,10 @@ export default function Channel({channelId, messages: initialMessages}) {
             <h1>Channel {channelId}</h1>
             <ul>
                 {messages.map((message) => (
-                    <li key={message.id}>{message.text}</li>
+                    <li key={message.id}>
+                        {message.userName}: {" "}
+                        {message.text}
+                        </li>
                 ))}
             </ul>
             {/* {loading && <>
